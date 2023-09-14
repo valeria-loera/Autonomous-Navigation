@@ -15,17 +15,26 @@ Búsqueda en Anchura (BFS) es un algoritmo simple que explora todos los nodos en
 Dado a que el objetivo del reto fue llevar al rover desde su posición inicial a unas coordenadas determinadas sin considerar la complejidad del terreno ni los obstáculos, bastó con un algoritmo de búsqueda simple y efectivo como el algoritmo de búsqueda en anchura (BFS), dado que resulta una buena opción ya que, para este reto, explorará todas las posibles rutas desde la posición inicial hasta las coordenadas objetivo y encontrará la más corta en términos de número de movimientos.
 
 ### ¿En qué consiste?
-Utiliza una estrategia de búsqueda por niveles y se expandir todos los nodos vecinos antes de avanzar a los siguientes niveles. Aunque su complejidad en tiempo puede ser alta en grafos muy grandes, si el espacio de búsqueda no es extremadamente grande, el BFS es una opción eficiente.
+Utiliza una estrategia de búsqueda por niveles y se expandir todos los nodos vecinos antes de avanzar a los siguientes niveles. Aunque su complejidad en tiempo puede ser alta en grafos muy grandes, si el espacio de búsqueda no es extremadamente grande, el BFS es una opción eficiente. En este sentido, funciona de la siguiente manera:
 
-> Inicializar una cola con la posición inicial del rover.
+>  Inicializar una cola con la posición inicial del rover.
 >  Mientras la cola no esté vacía:
 > * Sacar el nodo (posición actual del rover) de la cola.
 > * Si el nodo coincide con las coordenadas objetivo, se ha encontrado la solución.
 > * De lo contrario, agregar todos los nodos vecinos (posibles movimientos) a la cola.
->   
-> Repetir el ciclo hasta encontrar las coordenadas objetivo o hasta que la cola esté vacía.
+> 
+>  Repetir el ciclo hasta encontrar las coordenadas objetivo o hasta que la cola esté vacía.
 
 La cola se usa para mantener un conjunto de nodos que se deben explorar o visitar durante el proceso de búsqueda, y determinar qué nodo se debe explorar a continuación. En este algoritmo, un nodo representa un punto en el grafo y puede estar conectado a otros nodos a través de aristas; en este caso, refiere a una posición o estado específico en el espacio de búsqueda del código ArUco. 
+
+<img width="450" alt="bfs_ejemplo" src="https://github.com/valeria-loera/Autonomous-Navigation/assets/140004567/98b32b9e-04fa-4ff5-9055-0c50c6614980">
+
+En el diagrama anterior se muestra como:
+> * En el nivel 0, se marca el nodo como inicial.
+> 
+> * Después, se explora y atraviesan los nodos no visitados adyacentes al nodo inicial.
+> 
+> * Finalmente, se marca el nodo como completado o visitado y se mueve al siguiente nodo adyacente y que no ha sido visitado.
 
 
 ## Implementación del algoritmo
