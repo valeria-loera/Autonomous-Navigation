@@ -39,12 +39,12 @@ La recuperación de la ruta implica rastrear desde el nodo de destino `p_aruco` 
 ### Orientación del rover
 Para obtener la orientación `ar_𝜽` que el rover tendrá al momento de buscar la coordenada del código ArUco, se consideró la trayectoria del rover como la hipotenusa de un triángulo rectángulo, cuyo cateto opuesto es la diferencia entre las coordenadas en *y* de la posición inicial y la posición del código (`ar_y - yr`), y el cateto adyacente la diferencia entre las coordenadas en *x* de la posición inicial y la posición del código (`ar_x - xr`). Así, si el valor del cateto adyacente daba `0`, `ar_𝜽` será `90°`, en caso contrario, `ar_𝜽` será la tangente inversa del cateto opuesto entre el cateto adyacente. 
 
-
 ### Ejes del gráfico
 Antes de graficar la trayectoria, se dibujaron las líneas del sistema de coordenadas donde se encuentra el rover y el código ArUco, con sus respectivas etiquetas indicando el eje *x* y el eje *y*. Para ello, se implementó `Turtle`, librería de Python que proporciona una forma simple y gráfica de crear dibujos y gráficos en dos dimensiones. 
 
+<img width="717" alt="ejes_coordenadas" src="https://github.com/valeria-loera/Autonomous-Navigation/assets/140004567/a04f29f6-017d-47a2-acd1-29b363f2b3c5">
+
 ### Gráfico de la trayectoria
 Se configuró el diseño gráfico de la ventana de Turtle y creó dos tortugas: `coordenada` que muestra los valores de las coordenadas, y `rover` que se desplaza en la pantalla. Las coordenadas iniciales y finales `p_initial` y `p_aruco` se escriben en la pantalla, junto con el ángulo `ar_𝜽`. El rover se mueve desde su posición inicial a la final y se marca con un punto. Finalmente, la ventana de Turtle se cierra al hacer clic en ella, y el código devuelve el valor del ángulo `ar_𝜽`.
-
 
 
