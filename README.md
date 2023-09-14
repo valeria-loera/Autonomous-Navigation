@@ -42,10 +42,9 @@ Para obtener la orientación `ar_𝜽` que el rover tendrá al momento de buscar
 ### Ejes del gráfico
 Antes de graficar la trayectoria, se dibujaron las líneas del sistema de coordenadas donde se encuentra el rover y el código ArUco, con sus respectivas etiquetas indicando el eje *x* y el eje *y*. Para ello, se implementó `Turtle`, librería de Python que proporciona una forma simple y gráfica de crear dibujos y gráficos en dos dimensiones. 
 
-<img width="400" alt="ejes_coordenadas" src="https://github.com/valeria-loera/Autonomous-Navigation/assets/140004567/a04f29f6-017d-47a2-acd1-29b363f2b3c5">
+<img width="450" alt="ejes_coordenadas" src="https://github.com/valeria-loera/Autonomous-Navigation/assets/140004567/a04f29f6-017d-47a2-acd1-29b363f2b3c5">
 
 ### Gráfico de la trayectoria
 Se configuró el diseño gráfico de la ventana de Turtle y creó dos tortugas: `coordenada` que muestra los valores de las coordenadas, y `rover` que se desplaza en la pantalla. Las coordenadas iniciales y finales `p_initial` y `p_aruco` se escriben en la pantalla, junto con el ángulo `ar_𝜽`. El rover se mueve desde su posición inicial a la final y se marca con un punto. Finalmente, la ventana de Turtle se cierra al hacer clic en ella, y el código devuelve el valor del ángulo `ar_𝜽`.
 
-<img width="400" alt="trayectoria" src="https://github.com/valeria-loera/Autonomous-Navigation/assets/140004567/52e1927a-9185-4d68-81dc-f4d28dfd7ef2">
-
+![trayectoria](https://github.com/valeria-loera/Autonomous-Navigation/assets/140004567/fa306633-5497-4efc-8652-9077515aec29)
