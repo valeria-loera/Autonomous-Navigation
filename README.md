@@ -1,7 +1,10 @@
 # Autonomous Navigation Challenge
-Reto de navegación autónoma basado en el algoritmo BFS creado con Python para el University Rover Challenge de Quantum Robotics.
+Reto de Navegación Autónoma basado en el algoritmo BFS creado con Python para el University Rover Challenge de Quantum Robotics.
 
 ## Sobre el reto
+En University Rover Challenge, existe una misión de Navegación Autónoma, en la cual es necesario buscar un código AR dada una coordenada aproximada donde podría estar. Por lo cual, se ha propuesto hacer un algoritmo de búsqueda de códigos ArUco, en el cual recibe unas coordenadas que sería la posición alrededor de la cual puede estar el código ArUco y unas coordenadas AR_X Y AR_Y, que tendrían la posición y orientación inicial del Rover. Únicamente tienes XR, YR, ΘR que trabajar en la trayectoria que seguiría el robot, no en la detección de los códigos.
+
+Considera que la posición de inicio del robot será: XR = 0 m, YR = 0 m, θR = 0. Las coordenadas del código ArUco serán generadas de manera aleatoria).
 
 
 ## Algoritmo de búsqueda BFS
