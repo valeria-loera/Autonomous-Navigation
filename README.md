@@ -25,7 +25,7 @@ Utiliza una estrategia de búsqueda por niveles y se expande a todos los nodos v
 
 La cola se usa para mantener un conjunto de nodos que se deben visitar durante el proceso de búsqueda y determinar qué nodo se debe explorar a continuación. En este algoritmo, un nodo representa un punto en el grafo que puede estar conectado a otros nodos a través de aristas; en este caso, refiere a una posición o estado específico en el espacio de búsqueda del código ArUco. 
 
-<img width="450" alt="bfs_ejemplo" src="https://github.com/valeria-loera/Autonomous-Navigation/assets/140004567/98b32b9e-04fa-4ff5-9055-0c50c6614980">
+<img width="450" alt="bfs_ejemplo" src="https://github.com/valeria-loera/Autonomous-Navigation/assets/140004567/163d4190-2975-4a86-9ac3-4ddd95f4253c">
 
 En el diagrama anterior se muestra como:
 > * En el nivel 0, se marca el nodo como inicial.
