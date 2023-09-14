@@ -49,6 +49,8 @@ La recuperación de la ruta implica rastrear desde el nodo de destino `p_aruco` 
 ### Orientación del rover
 Para obtener la orientación `ar_𝜽` que el rover tendrá al momento de buscar la coordenada del código ArUco, se consideró la trayectoria del rover como la hipotenusa de un triángulo rectángulo, cuyo cateto opuesto es la diferencia entre las coordenadas en *y* de la posición inicial y la posición del código (`ar_y - yr`), y el cateto adyacente la diferencia entre las coordenadas en *x* de la posición inicial y la posición del código (`ar_x - xr`). Así, si el valor del cateto adyacente daba `0`, `ar_𝜽 = 90°`, en caso contrario, `ar_𝜽` será la tangente inversa del cateto opuesto entre el cateto adyacente. 
 
+<img width="450" alt="orientacion" src="https://github.com/valeria-loera/Autonomous-Navigation/assets/140004567/cec8a1d7-9f2e-4297-9c9c-34a832858722">
+
 ### Ejes del gráfico
 Antes de graficar la trayectoria, se dibujaron las líneas del sistema de coordenadas donde se encuentran el rover y el código ArUco, con sus respectivas etiquetas indicando el eje *x* y el eje *y*. Para ello, se implementó `Turtle`, librería de Python que proporciona una forma simple y gráfica de crear dibujos y gráficos en dos dimensiones. 
 
