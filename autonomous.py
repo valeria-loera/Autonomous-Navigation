@@ -1,3 +1,9 @@
+#AUTONOMOUS NAVIGATION CHALLENGE
+#Reto de Navegación Autónoma basado en el algoritmo BFS, creado con Python para el University Rover Challenge de Quantum Robotics.
+#Nombre: Valeria Loera Gómez
+#Fecha: 14/09/23
+#Versión: 1.0
+
 import random
 import math
 from collections import deque
@@ -156,8 +162,8 @@ def main():
 
 
     #IMPPRESIÓN RESULTADOS
-    print()
-    print("POSICIÓN INICIAL: ", p_initial)
+    print("\n\n\t⋙⋙ TRAYETCORIA ROVER QUANTUM ROBOTICS ⋘⋘")
+    print("\nPOSICIÓN INICIAL: ", p_initial)
     print("POSICIÓN CÓDIGO ARUCO: ", p_aruco)
 
 
